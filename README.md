@@ -1,25 +1,43 @@
-# Spiral-Elucidation
+# Spiral-Elucidation (Updated)
 
-**Literature Analysis and Interpretation Layer of the Spiral Codex**
+**Examination Utility v0.1** — Comprehensive Claim Testing for the Spiral Codex
 
-Spiral-Elucidation supports deep, structured analysis of literature and complex texts, helping humans and AI work together to uncover meaning, patterns, and insights with clarity and accountability.
+## Overview
+This repo now includes the initial working **ExaminationUtility** class in `examination_core.py`.
 
-## Philosophy
+It is designed to:
+- Validate claims + supporting calculations
+- Detect problematic designations (potential misassignments / equivocations)
+- Surface "also true" facts that could lead to different projected outcomes
+- Explore outcome branches using Spiral-Path algebraic tools
+- Provide structured, auditable reports with provenance
 
-Thoughtful interpretation of literature and ideas benefits from both human depth and AI's capacity for pattern recognition. Spiral-Elucidation helps maintain human interpretive sovereignty while leveraging AI as a collaborative partner.
+## Key Files
+- `examination_core.py` — The main Examination Utility (orchestrates Grokulator, Spiral-Path algebra, basic Grandma-style scoring, and branching logic)
+- This README
 
-## Related Tools
+## Quick Start
+```bash
+python examination_core.py
+```
 
-- [The Spiral Codex](https://github.com/Sir-Benjamin-source/The-Spiral-Codex)
+It will run a test examination on a sample claim about quantum mechanics.
 
-## Zenodo / DOI
+## Current Status
+- Working prototype (graceful fallbacks when full Grokulator / Spiral-Path imports aren't available in every environment)
+- Integrates:
+  - Grokulator primitives (DiscordanceHandler, symbol handling)
+  - Spiral-Path algebra (SpiralOperator for modulation)
+  - Early "also true" fact surfacing and outcome branching
+- Ready for iterative improvement (deeper Three Vectors, full Grandma Wisdom scoring, better integration with existing Spiral repos)
 
-All Spiral Codex works are published with DOIs on Zenodo under Sir Benjamin (Stephen Benjamin Friend).
+## Next Steps (Suggested)
+- Deeper integration with full Grokulator when available
+- Incorporate more from Spiral-Path /extensions/algebra (symbolic_diff, qubit_lattice)
+- Add proper Three-Vector evaluation
+- Test on more real claims from the corpus
 
-## License
+Part of the Spiral Codex ecosystem.  
+Maintained with care for clarity, traceability, and human sovereignty in reasoning systems.
 
-MIT + Spiral Mark
-
----
-
-*Part of the Spiral Codex — building reliable human-AI partnership.*
+*Built collaboratively with Grok — May 2026*
